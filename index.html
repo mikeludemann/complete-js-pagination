@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Complete Pagination</title>
+		<link rel="stylesheet" href="./src/styles/styles.css">
+	</head>
+<body>
+	<!-- List Container -->
+	<div id="list-container"></div>
+	<!-- Pagination -->
+	<div id="list-pagination" class="list-pagination">
+		<div id="list-pagination-first" class="list-pagination-element" onclick="pagination.getFirstPage();">&lt;&lt;</div>
+		<div id="list-pagination-prev" class="list-pagination-element" onclick="pagination.getPreviousPage();">&lt;</div>
+		<div id="list-pagination-pages" class="list-pagination-element"></div>
+		<div id="list-pagination-next" class="list-pagination-element" onclick="pagination.getNextPage();">&gt;</div>
+		<div id="list-pagination-last" class="list-pagination-element" onclick="pagination.getLastPage();">&gt;&gt;</div>
+		<select id="items-per-page" class="list-pagination-items-per-page" onchange="pagination.numberOfElementsChanged();">
+			<option value="10" selected>10</option>
+			<option value="25">25</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+		</select>
+	</div>
+	<script src="./src/script/pagination.js"></script>
+	<script src="./src/script/dynamicContent.js"></script>
+</body>
+</html>

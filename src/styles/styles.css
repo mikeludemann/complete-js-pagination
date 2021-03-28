@@ -1,0 +1,85 @@
+body {
+	width: 100%;
+	margin: 0;
+}
+
+#list-container div {
+	padding: 5px;
+	margin: 5px;
+}
+
+#list-container > div:not(:last-child) {
+	border-bottom: 1px solid #ccc;
+}
+
+div.list-pagination {
+	clear: left;
+	text-align: center;
+	margin: 20px 0;
+	width: 99%;
+	float: left;
+}
+
+div.list-pagination-element {
+	float: left;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	margin: 0 5px;
+	line-height: 40px;
+}
+
+#list-pagination-first,
+#list-pagination-prev,
+#list-pagination-next,
+#list-pagination-last,
+#list-pagination-pages > .list-pagination-element {
+	float: left;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	line-height: 20px;
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+div.list-pagination-element div:hover {
+	color: #000;
+}
+
+div.list-pagination-element-unavailable {
+	float: left;
+	cursor: default;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	line-height: 20px;
+	padding: 10px;
+	border: 1px solid #ccc !important;
+	background-color: #ccc;
+	color: #fff;
+}
+
+div.list-pagination-element-unavailable:hover {
+	background-color: #ccc;
+	color: #fff !important;
+}
+
+.cards_per_page {
+	color: #666;
+	padding: 8px 10px;
+	float: right;
+}
+
+#list-pagination-pages {
+	width: auto;
+	display: -webkit-inline-flex;
+}
+
+div.list-pagination select.list-pagination-items-per-page {
+	float: right;
+	padding: 5px;
+	height: 35px;
+	width: 50px;
+}
